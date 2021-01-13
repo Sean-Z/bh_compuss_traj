@@ -1,0 +1,18 @@
+clc
+clf
+clear
+longa = ;
+longb = ;
+lata = ;
+latb = ;
+n = 20;
+
+x = linspace(longa,longb,n);
+y = linspace(lata,latb,n);
+for i = 1:1:n
+x1(i) = x(i) + unifrnd(-0.000007,0.000007);
+y1(i) = y(i) + unifrnd(-0.000007,0.000007);
+end
+plot(x1,y1,'*')
+x2 = x1';
+y2 = y1'
